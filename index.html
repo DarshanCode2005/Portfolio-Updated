@@ -469,6 +469,27 @@
             opacity: 0.7;
             font-size: 0.9rem;
         }
+
+        .project-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* take the full height of the project card */
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        .project-link {
+            justify-self: flex-end;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
         
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -607,7 +628,6 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">Project Image</div>
                     <div class="project-content">
                         <h3 class="project-title">Startup Growth and Burn Rate Model</h3>
                         <p>Developed a financial model to analyze startup growth, burn rate, and runway estimation. Implemented burn rate analysis, Revenue Forecasting, and Scenario Simulations to assist in strategic decision-making. Created interactive dashboards using Excel and Python to visualize revenue vs. expenses and runway trends.</p>
@@ -617,10 +637,13 @@
                             <span class="project-tag">Data Analysis</span>
                             <span class="project-tag">Financial Modeling</span>
                         </div>
+                        <!-- Add styling to all the links and make them look like buttons -->
+                        
+                        
+                        <a href="https://colab.research.google.com/drive/1vBPibgrQZqqFGZ1Yl6k6KHCe3Xb8rfnx" class="project-link">View Project</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">Project Image</div>
                     <div class="project-content">
                         <h3 class="project-title">Human Heat-Powered Thermoelectric Generator</h3>
                         <p>Engineered a thermoelectric generator (TEG) with a DC-DC booster to harness body heat for low-power applications. Improved conversion efficiency and explored sustainable energy harvesting for remote sensors and IoT devices. Conducted efficiency analysis to reduce energy loss in the power conversion process.</p>
@@ -633,7 +656,6 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">Project Image</div>
                     <div class="project-content">
                         <h3 class="project-title">Resume Parser using NLP</h3>
                         <p>Developed a resume parsing tool using Natural Language Processing (NLP) to extract key details from resumes. Implemented Named Entity Recognition (NER) and Text Classification for skill and experience extraction. Integrated the parser into a web-based interface for seamless resume analysis.</p>
@@ -643,10 +665,10 @@
                             <span class="project-tag">Spacy</span>
                             <span class="project-tag">Web Development</span>
                         </div>
+                        <a href="https://github.com/DarshanCode2005/resume-parser" class="project-link">View Project</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img">Project Image</div>
                     <div class="project-content">
                         <h3 class="project-title">Minimalistic Text Editor</h3>
                         <p>Built a lightweight text editor with essential formatting features and a clean UI. Implemented file handling, autosave, and syntax highlighting features. Skills: JavaScript, HTML, CSS</p>
@@ -655,9 +677,113 @@
                             <span class="project-tag">HTML</span>
                             <span class="project-tag">CSS</span>
                         </div>
+                        <!-- Add link to the project -->
+                        <a href="https://github.com/DarshanCode2005/NotePad-text-editor-" class="project-link">View Project</a>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Cross-Platform Task Automator</h3>
+                        <p>A smart Telegram,Discord and Whatsapp bot to automate reminders, tasks, and conversations. Supports Opensource LLMs like Mistral for natural language command execution.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Telegram Bot</span>
+                            <span class="project-tag">Discord Bot</span>
+                            <span class="project-tag">Whatsapp Bot</span>
+                            <span class="project-tag">Opensource AI model (Mistral)</span>
+                        </div>
+                        <a href="https://github.com/DarshanCode2005/Task-Automator" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">LinkedIn Profile Finder</h3>
+                        <p>An AI-powered tool to find and validate LinkedIn profiles based on a persona, using a hybrid scoring approach that combines name, semantic, location, and image similarity.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Streamlit</span>
+                            <span class="project-tag">Gemini AI</span>
+                            <span class="project-tag">People Data Labs API</span>
+                            <span class="project-tag">ScrapingDog API</span>
+                            <span class="project-tag">SerpAPI</span>
+                            <span class="project-tag">CLIP</span>
+                            <span class="project-tag">BERT</span>
+                            <span class="project-tag">FuzzyWuzzy</span>
+                            <span class="project-tag">Requests</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                        <a href="https://github.com/DarshanCode2005/Recepto-NLP" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">AI Content Generator</h3>
+                    <p>A powerful AI-driven SaaS platform that helps users generate high-quality, SEO-optimized content for blogs, social media, and marketing in seconds.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js</span>
+                        <span class="project-tag">Gemini-2.0-flash API</span>
+                        <span class="project-tag">Clerk Authentication</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <a href="https://github.com/DarshanCode2005/ai-content-generator" class="project-link">View Project</a>
+                </div>
             </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Brain Tumor Detection using CNN</h3>
+                    <p>A deep learning project that classifies brain MRI images to detect tumors with 84% validation accuracy using Convolutional Neural Networks.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">TensorFlow</span>
+                        <span class="project-tag">Keras</span>
+                    </div>  
+                    <a href="https://colab.research.google.com/drive/1NfSbr8z0Qc2_DR2Hq5MMai2x1_Z6Ax6h?usp=sharing" class="project-link">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Emotion-Based Song Recommender</h3>
+                    <p>A sophisticated NLP and ML-powered music recommender that suggests songs based on user emotions using DistilBERT and Spotify audio features.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">Hugging Face Transformers</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">Spotify Songs Dataset</span>
+                    </div>
+                    <a href="https://github.com/DarshanCode2005/Spotify-song-recommender" class="project-link">View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Net Zero 2070: Carbon Emission Data Analytics</h3>
+                    <p>A data analytics project focused on tracking, analyzing, and visualizing global carbon emissions trends to support the Net Zero 2070 mission.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Pandas</span>
+                        <span class="project-tag">Plotly</span>
+                        <span class="project-tag">Prophet</span>
+                        <span class="project-tag">GeoPandas</span>
+                        <span class="project-tag">scikit-learn</span>
+                    </div>
+                    <a href="https://colab.research.google.com/drive/1vR8nPFxP4oHD-a5y6zMrA27GoHcF6EMT?usp=sharing" class="project-link">View Project</a>
+                </div>
+            </div>
+
+
+            <!-- Insert the new project card here -->
+            
+            </div>
+
+           
+
         </div>
     </section>
 
@@ -692,14 +818,14 @@
                 <div class="achievement-item">
                     <div class="achievement-icon">🌟</div>
                     <div class="achievement-content">
-                        <h3>Tech General Championship, IMG Automation FS by Recepto.ai</h3>
-                        <p>Developed Recepto.ai, an AI-powered lead discovery engine leveraging NLP, Gemini, ScrapingDog, People Data API, and SerpsAPI to identify and rank LinkedIn profiles using matched persona and automated query generation and profile parsing, reduced manual prospecting effort by 80%.</p>
+                        <h3>Tech General Championship, Linkedin Automation PS by Recepto.ai</h3>
+                        <p>Developed , an AI-powered lead discovery engine leveraging NLP, Gemini, ScrapingDog, People Data API, and SerpsAPI to identify and rank LinkedIn profiles using matched persona and automated query generation and profile parsing, reduced manual prospecting effort by 80%.</p>
                     </div>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-icon">🎯</div>
                     <div class="achievement-content">
-                        <h3>New Year Coding Challenge (2021) - CodeInGal</h3>
+                        <h3>New Year Coding Challenge (2021) - Codingal</h3>
                         <p>Achieved 3rd position in a competitive frontend development challenge, showcasing web development skills through a functional and visually appealing website.</p>
                     </div>
                 </div>
@@ -786,32 +912,6 @@
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
-                <script>
-                    document.getElementById('contactForm').addEventListener('submit', async function (e) {
-                        e.preventDefault();
-                        const formData = new FormData(this);
-                        const data = Object.fromEntries(formData.entries());
-
-                        try {
-                            const response = await fetch('https://formspree.io/f/xvgazdkl', {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify(data)
-                            });
-
-                            if (response.ok) {
-                                alert('Message sent successfully!');
-                                this.reset();
-                            } else {
-                                alert('Failed to send message. Please try again later.');
-                            }
-                        } catch (error) {
-                            alert('An error occurred. Please try again later.');
-                        }
-                    });
-                </script>
             </div>
         </div>
     </section>
@@ -842,5 +942,31 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('https://formspree.io/f/xvgazdkl', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    this.reset();
+                } else {
+                    alert('Failed to send message. Please try again later.');
+                }
+            } catch (error) {
+                alert('An error occurred. Please try again later.');
+            }
+        });
+    </script>
 </body>
 </html>
